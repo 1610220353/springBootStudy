@@ -14,9 +14,9 @@ import java.time.LocalDateTime;
  * 定时任务，多线程，方式
  */
 
-@Configuration
-@EnableScheduling
-@Async
+//@Configuration
+//@EnableScheduling
+//@Async
 public class ScheduleTaskUtilAsync {
 
     private static final Logger logger = LoggerFactory.getLogger(ScheduleTaskUtilAsync.class);
