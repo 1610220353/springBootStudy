@@ -1,7 +1,5 @@
 package com.guohong.spring.controller;
 
-import com.guohong.spring.pojo.Test;
-import com.guohong.spring.service.TestService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,13 +11,12 @@ import java.util.List;
  */
 @RestController
 public class TestController {
-    @Resource
-    private TestService testService;
+
 
     @GetMapping(value = "test")
-    public List<Test> getTest() {
+    public String getTest() {
 
-        return testService.getTest();
+        return "sess";
     }
 
 }
